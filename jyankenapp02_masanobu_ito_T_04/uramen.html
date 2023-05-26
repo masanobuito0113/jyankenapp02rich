@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+<title>じゃんけんアプリ裏ステージ</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-design">
+            <img src="img/jyankenlogo.png" alt="ヘッダー画像" />
+            <h1 class="site-title">大じゃんけん大会<br>裏(リッチver)ステージ！</h1>
+        
+        </div>
+    </header>
+
+<main>
+    <audio id="start_audio" src="audio/boss_music.mp3" preload="auto"></audio>
+
+    <div id="textAnimation">
+        <h2 class="ura_text"></h2>
+    </div>
+    <div id="cpu1">
+        <div class="cpu1">
+          <h2 class="boss_text">最後の敵、<span class="cpu_name">ゴーレム<span>が現れた。</h2>
+          <img src="img/pic25.png" class="boss_img">
+        </div>
+        <p class="choice">最後の戦いだ、どれかを選択しよう！</p>
+      <div class="jyanken_list">
+        <button onclick="R1_Click(0);"  class="jyanken_hand"><img src="img/jibun/guu.png"></button>
+        <button onclick="R1_Click(1);" class="jyanken_hand"><img src="img/jibun/choki.png"></button>
+        <button onclick="R1_Click(2);" class="jyanken_hand"><img src="img/jibun/paa.png"></button>
+      </div>
+    </div>
+    <div class="result_all">
+      <div class="if_win1">
+        <h3 id="cpu_hand"></h3>
+        <div class="result">
+        <h3>結果は…</h3>
+        <p>キミの勝ちだ。合計25の敵をついにたおしたな！おめでとう！</p>
+        <p>エンディング、見にいくかい？</p>
+        </div>
+        <button class="next1">進む！</button>
+      </div>
+      <div class="if_draw1">
+        <h3 id="cpu_hand"></h3>
+        <div class="result">
+        <h3>結果は…</h3>
+        <p>引き分け！</p>
+        </div>
+        <button class="furidashi">もう一度挑戦する！！</button>
+      </div>
+      <div class="if_lose1">
+        <h3 id="cpu_hand"></h3>
+        <div class="result">
+        <h3>結果は…</h3>
+        <p>残念…！挑戦失敗だ…</p>
+        </div>
+        <button class="furidashi">もう一度挑戦する！！</button>
+      </div>
+    </div>
+    </div>
+</main>
+
+  <footer class="footer">
+      <div class="footer-text">
+          <p>©2023 KADAI-ACADEMY</p>
+      </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/ugoki.js"></script>
+</body>
+</html>

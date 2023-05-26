@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+html {
+  background-color: #fffaf0;
+
+}
+body{
+    font-size: 16px;
+    width: 1200px;
+}
+
+/* header */
+.site-title{
+    font-size: 70px;
+    font-family: 'RocknRoll One', sans-serif;
+
+
+}
+.header-design{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 30px;
+    background-color: #f6ba84;
+    letter-spacing: -0.4em;
+    opacity: 0.8;
+}
+
+
+/* main */
+/* イントロ部分 */
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 40px;
+
+}
+.nav-item{
+    margin: 0 0 0 30px;
+    font-size: 20px;
+
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+.main-text{
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+
+/* 初級 */
+
+.elementary_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+    text-align: center;
+    row-gap: 30px;
+    margin-bottom: 40px;
+}
+.elementary-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+}
+.elementary-text{
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.elementary_pic {
+  max-width: 100px;
+  height: 100px;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0 15px;
+    font-family: 'RocknRoll One', sans-serif;
+
+}
+
+/* 中級 */
+
+.middle_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+      text-align: center;
+      row-gap: 30px;
+      margin-bottom: 40px;
+  }
+  .middle-title{
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    
+  }
+  .middle-text{
+      text-align: center;
+      line-height: 20px;
+      margin-bottom: 20px;
+  }
+  .middle_pic {
+    max-width: 100px;
+    height: 100px;
+  }
+
+  /* 上級 */
+
+.strong_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+      text-align: center;
+      row-gap: 30px;
+      margin-bottom: 40px;
+  }
+  .strong-title{
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    
+  }
+  .strong-text{
+      text-align: center;
+      line-height: 20px;
+      margin-bottom: 20px;
+  }
+  .strong_pic {
+    max-width: 100px;
+    height: 100px;
+  }
+  
+.pic22-size{
+   max-width:100%;
+    height:auto;
+}
+/*バトル会場 */
+#battle-secction{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #deb887;
+}
+
+.battle-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .jyanken-choice{
+    display: flex;
+    max-width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} */
+.jyanken-choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+
+}
+#kachimake{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.aite-choice{
+    text-align: center;
+    padding-bottom: 30px;
+}
+ 
+.jibun-choice-wrap{
+    text-align: center;
+}
+
+  /* footer */
+  .footer{
+    margin-top: 30px;
+    background-color: #f6ba84;
+   }
+   
+    .footer-text{
+       color: #fff;
+       padding: 10px 0 ;
+       font-size: 10px;
+
+   }
+
+/* 裏面のCSS */
+.if_win1,.if_lose1,.if_draw1{
+    display: none;
+}
+
+.ura_text{
+    font-size: 36px;
+    font-family: 'RocknRoll One', sans-serif;
+    text-align: center;
+    margin-top: 400px;
+}
+.boss_text{
+     font-size: 30px;
+    font-family: 'RocknRoll One', sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+.boss_img{
+    max-width: 400px;
+   
+}
+#cpu1{
+    text-align: center;
+}
+
+.jyanken_list{
+    text-align: center;
+    width:400px;
+    display: flex;
+    justify-content: space-between;
+     margin: 0 auto;
+    
+}
+.jyanken_hand img{
+    width: 60px;
+    height: auto;
+}
+.jyanken_hand:hover{
+    background-color: orange;
+}
+.choice{
+    font-size: 20px;
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+
+.result{
+    font-size: 30px;
+    font-family: 'RocknRoll One', sans-serif;
+    text-align: center;
+    line-height: 2;
+}
+#cpu_hand{
+    font-size: 30px;
+    font-family: 'RocknRoll One', sans-serif;
+    text-align: center;
+}
+.result_all{
+    text-align: center;
+
+}
+
+.furidashi{
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding: 10px 0;
+    border-radius: 30px;
+    background-color: orange;
+    color: black;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    text-decoration: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+
+.furidashi:hover {
+ background-color: white;
+}
+
+.next1{
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding: 10px 0;
+    border-radius: 30px;
+    background-color: orange;
+    color: black;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    text-decoration: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+
+.next1{
+ background-color: white;
+}
+
+ 
